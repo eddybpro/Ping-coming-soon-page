@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --pale-Blue: hsl(223, 100%, 88%);
+    --light-Red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-Dark-Blue: hsl(209, 33%, 12%);
+    --white:hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+main .txt{
+    padding-bottom: 1rem;
+}
+
+main .txt .logo{
+    margin-bottom: .75rem;
+}
+
+main .txt .title{
+    font-size: 1.5rem;
+    color: var(--gray);
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+main .txt .title span{
+    font-weight: 700;
+    color: var(--very-Dark-Blue);
+}
+
+main .txt .para{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: var(--very-Dark-Blue);
+}
+
+main .txt form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin:  1rem 0 2rem;
+    position: relative;
+
+}
+
+main .txt form input{
+    padding: .3rem .75rem;
+    border: 2px solid var(--gray);
+    border-radius: 8px;
+    font-size: 1.01rem;
+}
+
+main form .btn{
+    padding: .3rem 1.1rem;
+    font-size: 1.01rem;
+    text-transform: capitalize;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: .75rem;
+}
+
+main .txt form .error{
+    position: absolute;
+    top: 2rem;
+    color: var(--light-Red);
+    font-size: .75rem;
+    padding-top:.25rem ;
+    margin-left: -8rem;
+}
+
+main .txt form .none{
+    display: none;
+}
+
+main .img-container{
+    box-shadow: 2px 2px 20px var(--pale-Blue);
+}
+
+main .img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    padding: 0 1rem;
+    text-align: center;
+    margin:1rem auto;
+}
+
+footer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    margin-bottom: .75rem;
+}
+
+footer .icons .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+footer .icons .icon-container:hover{
+    background-color: var(--blue);
+}
+
+footer .icons .icon-container:hover i{
+    color: var(--white);
+}
+
+footer .icon-container i{
+    color: var(--blue);
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+}
+
+footer .copyright{
+    padding-bottom: .75rem;
+    color: var(--very-Dark-Blue);
+}
+
+footer .attribution{
+    color: var(--very-Dark-Blue);
+}
+
+footer a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+@media screen and (max-width:700px) {
+    main{
+        width: 95%;
+    }
+
+    main .txt form{
+        flex-direction: column;
+
+    }
+
+    main .txt form input{
+        width: 90%;
+    }
+
+    main .txt form .btn{
+        width: 90%;
+    }
+
+    main .txt form .error{
+        position: relative;
+        top: auto;
+        margin-left: 0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
